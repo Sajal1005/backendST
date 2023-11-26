@@ -39,7 +39,7 @@ const Edit = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     await axios
-      .put(`http://localhost:8000/api/update/${id}`, book)
+      .put(`https://backendstserver.onrender.com/api/update/${id}`, book)
       .then((response) => {
         toast.success("Book updated successfully", { position: "top-right" });
         navigate("/");

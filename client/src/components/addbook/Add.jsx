@@ -26,7 +26,7 @@ const Add = () => {
   const submitForm = async (e) => {
     e.preventDefault();
     await axios
-      .post("http://localhost:8000/api/create", book)
+      .post("https://backendstserver.onrender.com/api/create", book)
       .then((response) => {
         toast.success("Book added successfully", { position: "top-right" });
         navigate("/");

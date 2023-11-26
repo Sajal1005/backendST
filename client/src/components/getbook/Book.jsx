@@ -20,7 +20,7 @@ const Book = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`http://localhost:8000/api/getall?category=${category}&sort=${sort}`);
+        const response = await axios.get(`https://backendstserver.onrender.com/api/getall?category=${category}&sort=${sort}`);
         setBooks(response.data);
       } catch (error) {
         console.error('Error fetching book data:', error);
