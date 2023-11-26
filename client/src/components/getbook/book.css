@@ -1,0 +1,64 @@
+.bookTable {
+  width: 60%;
+  background-color: white;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  border-radius: 5px;
+  margin: 150px auto;
+  padding: 50px;
+  z-index: 100;
+}
+
+.addButton {
+  text-decoration: none;
+  background-color: rgb(206, 59, 206);
+  color: white;
+  font-weight: 500;
+  width: 93%;
+  text-align: center;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.065);
+  border-radius: 5px;
+  padding: 30px;
+}
+
+.bookTable table {
+  width: 100%;
+  margin-top: 30px;
+  border-collapse: collapse;
+}
+
+.bookTable table thead th {
+  background-color: darkblue;
+  color: white;
+  padding: 10px;
+}
+
+.bookTable table tbody td {
+  padding: 10px;
+  text-align: center;
+}
+
+.actionButtons .btn-1 {
+  border: 0;
+  outline: none;
+  background: red;
+  padding: 8px 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actionButtons .btn-2 {
+  margin-left: 10px;
+  border: 0;
+  outline: none;
+  background: rgb(2, 238, 2);
+  padding: 8px 10px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://as2.ftcdn.net/v2/jpg/02/65/14/49/1000_F_265144974_3oLejc4U5CKRhij0bqHMhs8xK3bFzuhs.jpg");
+}
