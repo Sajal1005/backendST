@@ -27,7 +27,7 @@ const Edit = () => {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:8000/api/getone/${id}`)
+      .get(`https://backendstserver.onrender.com/api/getone/${id}`)
       .then((response) => {
         setBook(response.data);
       })

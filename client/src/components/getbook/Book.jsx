@@ -32,7 +32,7 @@ const Book = () => {
 
   const deleteBook = async (bookId) => {
     await axios
-      .delete(`http://localhost:8000/api/delete/${bookId}`)
+      .delete(`https://backendstserver.onrender.com/api/delete/${bookId}`)
       .then((respones) => {
         setBooks((prevBook) => prevBook.filter((book) => book._id !== bookId));
         toast.success("Book deleted successfully", { position: "top-right" });
