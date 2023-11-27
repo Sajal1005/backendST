@@ -74,7 +74,7 @@ const Book = () => {
 
         <Link to={"/add"} className='addButton md:ml-10 mb-14 text-xl font-bold uppercase tracking-wider'>Add Book</Link>
 
-        <div className="relative flex flex-col items-center w-[93%] mb-8 ml-10 rounded-lg ">
+        <div className="relative flex flex-col items-center w-[93%] mb-8 md:ml-10 rounded-lg ">
             <button onClick={()=> setIsOpen((prev) => !prev)} className="uppercase text-center text-white bg-blue-400 p-4 px-16 w-full flex items-center justify-between font-bold text-xl rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white">
             Sort and filter the books
               {!isOpen ? (
@@ -87,7 +87,7 @@ const Book = () => {
                 <div className="bg-blue-400 mt-5 flex flex-wrap items-center justify-start rounded-lg p-2 px-10 w-full ">
                   
                   <div className="flex items-center justify-between py-8 mr-10"><label htmlFor="category" className="text-white text-lg font-bold mr-6">Select Category:</label>
-                  <select id="category" className="rounded-lg border-4 border-silver p-3 w-full  text-md" value={category} onChange={handleCategoryChange}>
+                  <select id="category" className="rounded-lg border-4 border-silver p-3 w-full min-w-[150px] text-md" value={category} onChange={handleCategoryChange}>
                     <option selected value="">All categories</option>
                     <option value="Fiction">Fiction</option>
                     <option value="Religious">Religious</option>
@@ -97,7 +97,7 @@ const Book = () => {
                   </select></div>
 
                   <div className="flex items-center justify-between py-8"><label htmlFor="category" className="text-white text-lg font-bold mr-6">Sort Data:</label>
-                  <select id="sort" className="rounded-lg border-4 border-silver p-3 w-full text-md" value={sort} onChange={handleSort}>
+                  <select id="sort" className="rounded-lg border-4 border-silver p-3 w-full text-md min-w-[190px]" value={sort} onChange={handleSort}>
                     <option className="" value="price">Sort by price</option>
                     <option selected value="name">Sort by name (Asc)</option>
                   </select></div>
