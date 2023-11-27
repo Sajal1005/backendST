@@ -118,7 +118,10 @@ const Book = () => {
     <p className="tracking-widest text-md font-medium mb-1">Publisher's Name: {book.pubName}</p>
     <p className="tracking-widest text-md font-medium mb-4">Book Price: ₹{book.price}</p>
     <div className="flex items-center flex-wrap mb-6">
-      <a target="_blank" rel="noreferrer" href={book.buyLink} className="text-purple-500 text-xl items-center md:mb-6 lg:mb-0 neon-button">Buy
+      <a target="_blank" rel="noreferrer" href={book.buyLink} className="  items-center md:mb-6 lg:mb-0 ">
+      <button className="button-64 uppercase" role="button">
+      <span class="text">Buy</span>
+      </button>
       </a>
     </div>
     <div className="actionButtons">
