@@ -73,7 +73,7 @@ const Add = () => {
               id="imgLink"
               name="imgLink"
               autoComplete="off"
-              placeholder="Name of the book"
+              placeholder="Image Link of the book"
             />
             <label htmlFor="imgLink">Image Link</label>
           </div>
@@ -85,7 +85,7 @@ const Add = () => {
               id="category"
               name="category"
               autoComplete="off"
-              placeholder="Name of the book"
+              placeholder="Book Category"
             />
             <label htmlFor="category">Category</label>
           </div>
@@ -97,7 +97,7 @@ const Add = () => {
               id="authName"
               name="authName"
               autoComplete="off"
-              placeholder="Author Name"
+              placeholder="Author's Name"
             />
             <label htmlFor="authName">Author's Name</label>
           </div>
@@ -109,7 +109,7 @@ const Add = () => {
               id="pubName"
               name="pubName"
               autoComplete="off"
-              placeholder="Publisher Name"
+              placeholder="Publisher's Name"
             />
             <label htmlFor="pubName">Publisher's Name</label>
           </div>
@@ -121,7 +121,7 @@ const Add = () => {
               id="price"
               name="price"
               autoComplete="off"
-              placeholder="Book Price"
+              placeholder="Price of the book"
             />
             <label htmlFor="price">Price (In Rs.)</label>
           </div>
