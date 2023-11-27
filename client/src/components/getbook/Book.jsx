@@ -72,10 +72,12 @@ const Book = () => {
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap">
 
-        <Link to={"/add"} className='addButton md:ml-10 mb-14 text-xl font-bold uppercase tracking-wider'>Add Book</Link>
+        
+          <Link to={"/add"} className=' md:ml-10 mb-14 text-xl font-bold uppercase tracking-wider '><button className="button-85" role="button">Add Book</button></Link>
+        
 
-        <div className="relative flex flex-col items-center w-[93%] mb-8 md:ml-10 rounded-lg ">
-            <button onClick={()=> setIsOpen((prev) => !prev)} className="uppercase text-center text-white bg-blue-400 p-4 px-16 w-full flex items-center justify-between font-bold text-xl rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white">
+        <div className="relative flex flex-col items-center  mb-8 md:ml-10 rounded-lg md:w-[70%] w-[93%]">
+            <button onClick={()=> setIsOpen((prev) => !prev)} className="button-85 uppercase text-center text-white bg-blue-400 p-4 px-16 w-full flex items-center justify-between font-bold text-xl rounded-lg tracking-wider border-4 border-transparent active:border-white duration-300 active:text-white">
             Sort and filter the books
               {!isOpen ? (
                 <AiOutlineCaretDown className="h-8"/>
@@ -84,7 +86,7 @@ const Book = () => {
               )}
               </button>
               {isOpen && (
-                <div className="bg-blue-400 mt-5 flex flex-wrap items-center justify-start rounded-lg p-2 px-10 w-full ">
+                <div className="anim mt-5 flex flex-wrap items-center justify-start rounded-lg p-2 px-10 w-full ">
                   
                   <div className="flex items-center justify-between py-8 mr-10"><label htmlFor="category" className="text-white text-lg font-bold mr-6">Select Category:</label>
                   <select id="category" className="rounded-lg border-4 border-silver p-3 w-full min-w-[150px] text-md" value={category} onChange={handleCategoryChange}>
@@ -105,6 +107,8 @@ const Book = () => {
                 </div>
               )}
           </div>
+
+          
 
     {books.map((book, index)=>{
                          return(
