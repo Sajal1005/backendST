@@ -47,28 +47,13 @@ const Book = () => {
 
   return (
     <>
-      <div className="hero bg-cover">
+      <div className=" bg-cover">
         <Navbar />
-        <section class="text-white body-font mt-20 ">
-          <div class="container mx-auto flex px-5 py-2 items-center justify-center flex-col">
-            <div class="text-center lg:w-2/3 w-full">
-              <h1 class="title-font sm:text-4xl text-6xl mb-2 font-black uppercase bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500">
-                Chuckling. Emotion. Suspense.{" "}
-              </h1>
-              {/* <div class="w-full h-2 bg-gradient-to-r mb-18 from-purple-500 to-pink-500"></div> */}
-
-              <h1 className="title-font sm:text-4xl mt-16 text-5xl mb-4 font-black uppercase bg-clip-text text-white">
-                Discover it all in the world of literature.
-              </h1>
-            </div>
-          </div><br /><br /><br /><br /><br />
-          <br /><br /><br />
-        </section>
       </div>
 
       
 
-      <section class="text-gray-600 body-font bg-gray-800 ">
+      <section class="text-gray-600 body-font bg-[#151515] ">
       <div class="container px-5 py-24 mx-auto">
         <div class="flex flex-wrap">
 
