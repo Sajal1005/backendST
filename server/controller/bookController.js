@@ -23,7 +23,7 @@ export const getAll = async(req, res) =>{
         const categoryFilter = req.query.category;
         const sortBooks = req.query.sort;
 
-        console.log(categoryFilter+" "+sortBooks)
+        // console.log(categoryFilter+" "+sortBooks)
         let bookData;
         if (categoryFilter) {
             // If category is specified, filter by category

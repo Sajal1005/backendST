@@ -7,7 +7,7 @@
   "scripts": {
     "start": "nodemon index.js"
   },
-  "author": "Santosh Kumar",
+  "author": "Sajal Nanda",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.20.2",
